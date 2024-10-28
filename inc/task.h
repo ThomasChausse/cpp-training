@@ -3,14 +3,10 @@
 #include <string>
 #include <ctime>
 
-
-
-
 namespace Tasks{
     class Task {
-        enum TaskStatus { PENDING, ACTIVE, DONE };
-
         public:
+            enum TaskStatus { PENDING, ACTIVE, DONE };
             Task(std::string& description);
             ~Task();
 
